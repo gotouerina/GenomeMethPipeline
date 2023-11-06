@@ -6,4 +6,4 @@ Pipeline for revio meth call
 
 拉取镜像：
 
-singularity pull docker://nipengcsu/ccsmethphase:latest
+    singularity pull docker://nipengcsu/ccsmethphase:latest
