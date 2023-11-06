@@ -1,3 +1,4 @@
+## From file contain kinestic signature like Mm et.al
 ref=
 bam=
 prefix=
