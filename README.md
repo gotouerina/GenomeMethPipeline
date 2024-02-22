@@ -11,6 +11,8 @@ Pull container：
 
 ##    02.CpG tools (PacBio official Pipeline)
 
+Notice: It is more recommanded to use cpgtools.pl but not bash scripts
+
 ### Install CpG tools
         
         wget https://github.com/PacificBiosciences/pb-CpG-tools/releases/download/v2.3.1/pb-CpG-tools-v2.3.1-x86_64-unknown-linux-gnu.tar.gz
