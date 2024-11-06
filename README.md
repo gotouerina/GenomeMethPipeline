@@ -33,7 +33,11 @@ Firstly, convert fast5 to pod5:
 
 Then, call bam from the pod5,
 
-        /groups/lzu_public/home/u220220932211/software/dorado-0.7.1-linux-x64/bin/dorado  basecaller  /groups/lzu_public/home/u220220932211/software/dna_r10.4.1_e8.2_400bps_hac@v5.0.0/     /groups/lzu_public/home/u220220932211/work/   --modified-bases-models /groups/lzu_public/home/u220220932211/software/dna_r10.4.1_e8.2_400bps_sup@v5.0.0_5mC_5hmC@v1/    > calls.bam
+        dorado  basecaller  /groups/lzu_public/home/u220220932211/software/dna_r10.4.1_e8.2_400bps_hac@v5.0.0/     /groups/lzu_public/home/u220220932211/work/   --modified-bases-models /groups/lzu_public/home/u220220932211/software/dna_r10.4.1_e8.2_400bps_sup@v5.0.0_5mC_5hmC@v1/    > calls.bam
+
+        /dna_r10.4.1_e8.2_400bps_hac@v5.0.0/ 是一个模型炉
+        dna_r10.4.1_e8.2_400bps_sup@v5.0.0_5mC_5hmC@v1/ 是个模型文件
 
 Last, call meth using modkit
+
         modkit pileup calls.bam out.bed --log-filepath pileup.log
