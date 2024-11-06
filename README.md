@@ -39,6 +39,7 @@ Then, call bam from the pod5,
  you can download them from the release. 
  
 ##注意，这是r10芯片的模型，r9芯片的需要用别的模型##
+##dorado需要带CUDA的GPU运行；
  
 
 Last, call meth using modkit
