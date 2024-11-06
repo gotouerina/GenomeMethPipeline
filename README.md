@@ -36,7 +36,10 @@ Then, call bam from the pod5,
         dorado  basecaller  /groups/lzu_public/home/u220220932211/software/dna_r10.4.1_e8.2_400bps_hac@v5.0.0/     /groups/lzu_public/home/u220220932211/work/   --modified-bases-models /groups/lzu_public/home/u220220932211/software/dna_r10.4.1_e8.2_400bps_sup@v5.0.0_5mC_5hmC@v1/    > calls.bam
 
  /dna_r10.4.1_e8.2_400bps_hac@v5.0.0/   and      dna_r10.4.1_e8.2_400bps_sup@v5.0.0_5mC_5hmC@v1/  are model files,
- you can download them from the release.
+ you can download them from the release. 
+ 
+##注意，这是r10芯片的模型，r9芯片的需要用别的模型##
+ 
 
 Last, call meth using modkit
 
