@@ -1,33 +1,25 @@
-# PacBio_meth
+# PacBio_methylation
 Pipeline for revio meth call
 
-
-##  01.ccsmeth
-
-Pull container：
-
-    singularity pull docker://nipengcsu/ccsmethphase:latest
-
-
-##    02.CpG tools (PacBio official Pipeline)
-
-Notice: It is more recommanded to use cpgtools.pl but not bash scripts
-
-### Install CpG tools
+## Install CpG tools
         
         wget https://github.com/PacificBiosciences/pb-CpG-tools/releases/download/v2.3.1/pb-CpG-tools-v2.3.1-x86_64-unknown-linux-gnu.tar.gz
         tar -xzf pb-CpG-tools-v2.3.1-x86_64-unknown-linux-gnu.tar.gz
         pb-CpG-tools-v2.3.1-x86_64-unknown-linux-gnu/bin/aligned_bam_to_cpg_scores --help
 
-### Install PBMM2
+## Install PBMM2
 
         wget https://github.com/PacificBiosciences/pbmm2/releases/download/v1.13.0/pbmm2
 
 ##  ALign
 
+        pbmm2 align $ref $bam $prefix.sort.bam --sort
+        
+        
 ## Call methylation
 
-
+        aligned_bam_to_cpg_scores --bam $prefix.sort.bam --output-prefix $prefix  --model $dir/pileup_calling_model.v1.tflite  --threads 10
+        
 ## HIFI Subreads PIPELINE
 First, download pbccs and pbjasmine with conda,
     
@@ -37,7 +29,7 @@ First, download pbccs and pbjasmine with conda,
 then align the bam to genome with PBMM2, and follow the usual step above.
         
 
-# Nanopore_meth
+# Nanopore_methylation
 
 Dorado + modkit using pod5 format for input.
 
@@ -59,10 +51,6 @@ Then, call bam from the pod5,
 Last, call meth using modkit
 
         modkit pileup calls.bam out.bed --log-filepath pileup.log
-
-        ![image](https://github.com/user-attachments/assets/bc2e66ec-305b-4032-a544-d629d6bbb07e)
-        ![image](https://github.com/user-attachments/assets/3c1db2f8-6c46-47c2-a25b-b731ab777cda)
-
 
 Definitions:
 
