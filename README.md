@@ -18,7 +18,7 @@ Pipeline for revio meth call
 or
 
         pbmm2 index $ref $ref.mmi
-         pbmm2 align $ref.mmi $bam $prefix.sort.bam --sort -j 50
+        pbmm2 align $ref.mmi $bam $prefix.sort.bam --sort -j 50
         
         
 ## Call methylation
