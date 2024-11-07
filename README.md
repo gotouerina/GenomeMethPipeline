@@ -44,8 +44,9 @@ Then, call bam from the pod5,
  /dna_r10.4.1_e8.2_400bps_hac@v5.0.0/   and      dna_r10.4.1_e8.2_400bps_sup@v5.0.0_5mC_5hmC@v1/  are model files,
  you can download them from the release. 
  
-##注意，这是r10芯片的模型，r9芯片的需要用别的模型##
-##dorado需要带CUDA的GPU运行；
+##    !!! This is model for r10 cell, and you need another model for r9 calling !!!
+
+##    !!!dorado need GPU with CUDA service!!!；
  
 
 Last, call meth using modkit
