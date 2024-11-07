@@ -24,7 +24,7 @@ Pipeline for revio meth call
 First, download pbccs and pbjasmine with conda,
     
         ccs subreads.bam  hifi_reads.bam --hifi-kinetics -j 100 (-j is the threads used in this process)
-        jasminehifi_reads.bam methylation.hifi_reads.bam
+        jasmine hifi_reads.bam methylation.hifi_reads.bam
 
 then align the bam to genome with PBMM2, and follow the usual step above.
         
