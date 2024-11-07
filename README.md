@@ -44,16 +44,17 @@ Then, call bam from the pod5,
  /dna_r10.4.1_e8.2_400bps_hac@v5.0.0/   and      dna_r10.4.1_e8.2_400bps_sup@v5.0.0_5mC_5hmC@v1/  are model files,
  you can download them from the release. 
  
-##    !!! This is model for r10 cell, and you need another model for r9 calling !!!
+  **!!! This is model for r10 cell, and you need another model for r9 calling !!!**
 
-##    !!!dorado need GPU with CUDA service!!!；
+  **!!! dorado need GPU with CUDA service!!!**
  
 
 Last, call meth using modkit
 
         modkit pileup calls.bam out.bed --log-filepath pileup.log
+        
 
-Definitions:
+Official Definitions:
 
 Nmod - Number of calls passing filters that were classified as a residue with a specified base modification.
 
