@@ -13,7 +13,7 @@ Pipeline for revio meth call
 
 ##  ALign
 
-        pbmm2 align $ref $bam $prefix.sort.bam --sort -j 50
+        pbmm2 align $ref $bam $prefix.sort.bam --sort -j 50 
 
 or
 
