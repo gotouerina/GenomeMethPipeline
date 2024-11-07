@@ -23,6 +23,20 @@ Notice: It is more recommanded to use cpgtools.pl but not bash scripts
 
         wget https://github.com/PacificBiosciences/pbmm2/releases/download/v1.13.0/pbmm2
 
+##  ALign
+
+## Call methylation
+
+
+## HIFI Subreads PIPELINE
+First, download pbccs and pbjasmine with conda,
+    
+        ccs subreads.bam  hifi_reads.bam --hifi-kinetics -j 100 (-j is the threads used in this process)
+        jasminehifi_reads.bam methylation.hifi_reads.bam
+
+then align the bam to genome with PBMM2, and follow the usual step above.
+        
+
 # Nanopore_meth
 
 Dorado + modkit using pod5 format for input.
